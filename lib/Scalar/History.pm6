@@ -1,7 +1,7 @@
 use Test;
 
-die "Scalar::History requires 2019.07 or later" 
-    if $*PERL.compiler.version.Str.substr(0,7) lt '2019.07';
+die "Scalar::History requires 2019.07 or later"
+    if ( $*PERL.compiler.version cmp Version.new('2019.07.1.357.gd.00674.b.31')  ) == Less;
 
 class Scalar::History::Proxy is Proxy
 {

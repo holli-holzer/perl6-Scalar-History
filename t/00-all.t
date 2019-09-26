@@ -2,7 +2,9 @@ use Scalar::History;
 
 use Test;
 
-ok !($*PERL.compiler.version.Str.substr(0,7) lt '2019.07'), "Rakudo version >= 2019.07";
+
+my $minumum-version = Version.new('2019.07.1.357.gd.00674.b.31');
+ok( ($*PERL.compiler.version cmp $minumum-version) != Less, "Rakudo version >= 2019.07.1.357.gd.00674.b.31" );
 
 subtest 'untyped' =>
 {
@@ -93,7 +95,7 @@ subtest 'behaviour' =>
     $int.VAR.reset-history();
     is-deeply( $int.VAR.get-history(:all), (), "history can be reset" );
 
-    my Int $foo = 11; 
+    my Int $foo = 11;
     $foo := Scalar::History.create($foo, Int);
     lives-ok { $foo == 11 && $foo.VAR.get-history }, 'can be initialized with a variable';
 
