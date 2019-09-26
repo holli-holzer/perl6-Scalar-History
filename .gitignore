@@ -1,0 +1,8 @@
+*.tgz
+*.tar.gz
+.precomp
+.ddt
+.nav-marker-rules
+.idea
+*.iml
+*.save

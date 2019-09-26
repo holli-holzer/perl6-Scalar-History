@@ -1,0 +1,22 @@
+{
+  "name": "Scalar::History",
+  "description": "A personal history for any scalar",
+  "version": "0.0.1",
+  "perl": "6.e",
+  "auth": "github:holli-holzer",
+  "authors": [
+    "Markus 'holli' Holzer"
+  ]
+  "depends": [],
+  "build-depends": [],
+  "test-depends": [],
+  "provides": {
+    "Scalar::History::Proxy" : "lib/Scalar/History.pm6",
+    "Scalar::History"        : "lib/Scalar/History.pm6"
+  },
+  "resources": [],
+  "license": "GPL-3.0",
+  "source-type" : "git",
+  "tags" : [ "History variable", "History", "Scalar" ]
+  "source-url": "https://github.com/holli-holzer/perl6-Scalar-History.git"
+}
