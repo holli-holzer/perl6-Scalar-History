@@ -2,7 +2,6 @@ use Scalar::History;
 
 use Test;
 
-
 my $minumum-version = Version.new('2019.07.1.357.gd.00674.b.31');
 ok( ($*PERL.compiler.version cmp $minumum-version) != Less, "Rakudo version >= 2019.07.1.357.gd.00674.b.31" );
 
