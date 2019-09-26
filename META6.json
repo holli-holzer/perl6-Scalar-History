@@ -6,7 +6,7 @@
   "auth": "github:holli-holzer",
   "authors": [
     "Markus 'holli' Holzer"
-  ]
+  ],
   "depends": [],
   "build-depends": [],
   "test-depends": [],
@@ -16,7 +16,7 @@
   },
   "resources": [],
   "license": "GPL-3.0",
-  "source-type" : "git",
-  "tags" : [ "History variable", "History", "Scalar" ]
+  "source-type": "git",
+  "tags": [ "History variable", "History", "Scalar" ],
   "source-url": "https://github.com/holli-holzer/perl6-Scalar-History.git"
 }
